@@ -26,7 +26,7 @@ Then copy the src/Youthere.php file in your application/libraries Folder.
 
 You can then load it like any other library
 
-    $this->load->library('youthere');
+    composer require buonzz/youthere:dev-master
 
 
 Usage
@@ -34,11 +34,12 @@ Usage
 
 Using it is very easy
 
-    $results = $this->youthere->check_files_presence(
-            $paths, 
-            $ftp_host, 
-            $ftp_username, 
-            $ftp_password);
+    $yt = new Buonzz\Youthere\Youthere;
+    $yt->check_files_presence(
+        $paths, 
+        $ftp_host, 
+        $ftp_username, 
+        $ftp_password);
 
 
 $paths - is an array of paths to the files that should be checked the presence in the server. Note that the path is the path on the target server
@@ -58,5 +59,3 @@ will return this array result
     array('/folder1/file1.txt' => TRUE , '/folder2/picture.png' => FALSE)
 
 Given that, file1.txt is present in the server, and picture.png wasn't
-
-
