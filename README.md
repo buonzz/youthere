@@ -35,7 +35,7 @@ Usage
 Using it is very easy
 
     $yt = new Buonzz\Youthere\Youthere;
-    $yt->check_files_presence(
+    $results = $yt->check_files_presence(
         $paths, 
         $ftp_host, 
         $ftp_username, 
