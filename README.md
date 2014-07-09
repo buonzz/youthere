@@ -1,6 +1,7 @@
 youthere
 ===========
 
+[![Build Status](https://travis-ci.org/buonzz/youthere.svg?branch=master)](https://travis-ci.org/buonzz/youthere)
 
 A Class Library to Check if files is present in another server
 
