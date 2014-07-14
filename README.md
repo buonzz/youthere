@@ -22,10 +22,7 @@ Requirements
 Installation
 ------------
 
-The easiest way to install this is to clone the repo in your local disk. 
-Then copy the src/Youthere.php file in your application/libraries Folder.
-
-You can then load it like any other library
+The easiest way to install this is to use composer
 
     composer require buonzz/youthere:dev-master
 
